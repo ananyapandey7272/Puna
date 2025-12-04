@@ -1,14 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Puna</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zani - Advanced Discord Bot</title>
+    <meta name="theme-color" content="#FFD700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="hero-stats">
-  <h1>We are serving 30+ servers and 20K+ users!</h1>
-</section>
-
-<section class="stats-section">
-  <p>Current Stats: 30+ servers, 20K+ users active.</p>
-</section>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo"><img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Zani"><span>Zani</span></a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#features">Features</a>
+                <a href="#commands">Commands</a>
+                <a href="#stats">Stats</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1444034840474288282&permissions=8&integration_type=0&scope=bot" class="btn btn-primary" target="_blank"><i class="fas fa-plus"></i> Add to Discord</a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-bolt"></i> Most Advanced Discord Bot</div>
+            <h1 class="hero-title">Meet <span class="gradient-text">Zani</span><br>Your Ultimate Discord Companion</h1>
+            <p class="hero-description">Powerful moderation, advanced security, custom roles, music, leveling, and much more.</p>
+            <div class="hero-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1444034840474288282&permissions=8&integration_type=0&scope=bot" class="btn btn-primary btn-lg" target="_blank"><i class="fab fa-discord"></i> Add to Discord</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><div class="stat-number">30+</div><div class="stat-label">Servers</div></div>
+                <div class="stat-item"><div class="stat-number">20K+</div><div class="stat-label">Users</div></div>
+                <div class="stat-item"><div class="stat-number">200+</div><div class="stat-label">Commands</div></div>
+                <div class="stat-item"><div class="stat-number">99.9%</div><div class="stat-label">Uptime</div></div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header"><span class="section-badge">Features</span><h2 class="section-title">Powerful Features</h2></div>
+            <div class="features-grid">
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-shield-halved"></i></div><h3>Security</h3><p>Anti-nuke, anti-raid protection</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-gavel"></i></div><h3>Moderation</h3><p>Ban, kick, mute, warn commands</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-music"></i></div><h3>Music</h3><p>YouTube, Spotify support</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-trophy"></i></div><h3>Leveling</h3><p>XP, levels, leaderboards</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stats-card"><div class="stats-icon"><i class="fas fa-server"></i></div><div class="stats-info"><div class="stats-number">30+</div><div class="stats-label">Servers</div></div></div></div>
+                <div class="stats-card"><div class="stats-icon"><i class="fas fa-users"></i></div><div class="stats-info"><div class="stats-number">20K+</div><div class="stats-label">Users</div></div></div></div>
+                <div class="stats-card"><div class="stats-icon"><i class="fas fa-terminal"></i></div><div class="stats-info"><div class="stats-number">200+</div><div class="stats-label">Commands</div></div></div></div>
+                <div class="stats-card"><div class="stats-icon"><i class="fas fa-clock"></i></div><div class="stats-info"><div class="stats-number">99.9%</div><div class="stats-label">Uptime</div></div></div></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom"><p>© 2024 Zani Bot. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
