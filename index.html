@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zani - Advanced Discord Bot</title>
+    <meta name="description" content="Zani - The most advanced Discord bot for your server. Moderation, security, roles, music, and more!">
+    <meta name="theme-color" content="#FFD700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Zani">
+                <span>Zani</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#features">Features</a>
+                <a href="#commands">Commands</a>
+                <a href="#stats">Stats</a>
+                <a href="https://discord.gg/zani" target="_blank">Support</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1444034840474288282&permissions=8&integration_type=0&scope=bot" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-plus"></i> Add to Discord
+                </a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#features" onclick="toggleMenu()">Features</a>
+        <a href="#commands" onclick="toggleMenu()">Commands</a>
+        <a href="#stats" onclick="toggleMenu()">Stats</a>
+        <a href="https://discord.gg/zani" target="_blank">Support</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1444034840474288282&permissions=8&integration_type=0&scope=bot" class="btn btn-primary" target="_blank">Add to Discord</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i> Most Advanced Discord Bot
+            </div>
+            <h1 class="hero-title">
+                Meet <span class="gradient-text">Zani</span>
+                <br>Your Ultimate Discord Companion
+            </h1>
+            <p class="hero-description">
+                Powerful moderation, advanced security, custom roles, music, leveling, and much more. 
+                Everything you need to build an amazing Discord community.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1444034840474288282&permissions=8&integration_type=0&scope=bot" class="btn btn-primary btn-lg" target="_blank">
+                    <i class="fab fa-discord"></i> Add to Discord
+                </a>
+                <a href="#features" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-compass"></i> Explore Features
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Servers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Commands</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-glow"></div>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Zani Bot" class="floating">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Powerful Features for Your Server</h2>
+                <p class="section-description">Everything you need to manage and grow your Discord community</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Advanced Security</h3>
+                    <p>Anti-nuke, anti-raid, anti-spam protection with whitelist system. Keep your server safe 24/7.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Anti-Nuke Protection</li>
+                        <li><i class="fas fa-check"></i> Anti-Raid System</li>
+                        <li><i class="fas fa-check"></i> Auto-Moderation</li>
+                        <li><i class="fas fa-check"></i> Whitelist Management</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gavel"></i></div>
+                    <h3>Moderation</h3>
+                    <p>Complete moderation toolkit with ban, kick, mute, warn, and advanced logging features.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Ban/Kick/Mute</li>
+                        <li><i class="fas fa-check"></i> Warning System</li>
+                        <li><i class="fas fa-check"></i> Mod Logs</li>
+                        <li><i class="fas fa-check"></i> Timeout Management</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-tag"></i></div>
+                    <h3>Custom Roles</h3>
+                    <p>Button roles, reaction roles, auto roles, vanity roles, status roles and more!</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Button Roles</li>
+                        <li><i class="fas fa-check"></i> Reaction Roles</li>
+                        <li><i class="fas fa-check"></i> Auto Roles</li>
+                        <li><i class="fas fa-check"></i> Vanity Roles</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-music"></i></div>
+                    <h3>Music System</h3>
+                    <p>High quality music playback with support for YouTube, Spotify, and SoundCloud.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> YouTube Support</li>
+                        <li><i class="fas fa-check"></i> Spotify Integration</li>
+                        <li><i class="fas fa-check"></i> Queue Management</li>
+                        <li><i class="fas fa-check"></i> Filters & Effects</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Leveling System</h3>
+                    <p>Engage your community with XP, levels, leaderboards, and role rewards.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> XP System</li>
+                        <li><i class="fas fa-check"></i> Custom Rank Cards</li>
+                        <li><i class="fas fa-check"></i> Leaderboards</li>
+                        <li><i class="fas fa-check"></i> Level Roles</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-hand-wave"></i></div>
+                    <h3>Welcome System</h3>
+                    <p>Beautiful welcome messages, auto-roles, and customizable greet messages.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Welcome Messages</li>
+                        <li><i class="fas fa-check"></i> Custom Embeds</li>
+                        <li><i class="fas fa-check"></i> Welcome Images</li>
+                        <li><i class="fas fa-check"></i> Auto Roles</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-ticket"></i></div>
+                    <h3>Ticket System</h3>
+                    <p>Professional support ticket system with categories, transcripts, and staff management.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Multiple Categories</li>
+                        <li><i class="fas fa-check"></i> Transcripts</li>
+                        <li><i class="fas fa-check"></i> Staff Roles</li>
+                        <li><i class="fas fa-check"></i> Auto Close</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gift"></i></div>
+                    <h3>Giveaways</h3>
+                    <p>Host exciting giveaways with requirements, multiple winners, and reroll options.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Easy Setup</li>
+                        <li><i class="fas fa-check"></i> Requirements</li>
+                        <li><i class="fas fa-check"></i> Multiple Winners</li>
+                        <li><i class="fas fa-check"></i> Reroll Support</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cog"></i></div>
+                    <h3>Utility Tools</h3>
+                    <p>Essential utility commands for server management and user information.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Server Info</li>
+                        <li><i class="fas fa-check"></i> User Info</li>
+                        <li><i class="fas fa-check"></i> Avatar/Banner</li>
+                        <li><i class="fas fa-check"></i> Embed Builder</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Commands</span>
+                <h2 class="section-title">Explore Our Commands</h2>
+                <p class="section-description">Over 200+ commands to enhance your server experience</p>
+            </div>
+
+            <div class="commands-filter">
+                <button class="filter-btn active" onclick="filterCommands('all')">All</button>
+                <button class="filter-btn" onclick="filterCommands('moderation')">Moderation</button>
+                <button class="filter-btn" onclick="filterCommands('security')">Security</button>
+                <button class="filter-btn" onclick="filterCommands('roles')">Roles</button>
+                <button class="filter-btn" onclick="filterCommands('music')">Music</button>
+                <button class="filter-btn" onclick="filterCommands('utility')">Utility</button>
+            </div>
+
+            <div class="commands-grid">
+                <div class="command-card" data-category="moderation">
+                    <div class="command-header">
+                        <span class="command-name">/ban</span>
+                        <span class="command-category">Moderation</span>
+                    </div>
+                    <p class="command-desc">Ban a member from the server</p>
+                </div>
+                <div class="command-card" data-category="moderation">
+                    <div class="command-header">
+                        <span class="command-name">/kick</span>
+                        <span class="command-category">Moderation</span>
+                    </div>
+                    <p class="command-desc">Kick a member from the server</p>
+                </div>
+                <div class="command-card" data-category="moderation">
+                    <div class="command-header">
+                        <span class="command-name">/mute</span>
+                        <span class="command-category">Moderation</span>
+                    </div>
+                    <p class="command-desc">Mute a member in the server</p>
+                </div>
+                <div class="command-card" data-category="moderation">
+                    <div class="command-header">
+                        <span class="command-name">/warn</span>
+                        <span class="command-category">Moderation</span>
+                    </div>
+                    <p class="command-desc">Warn a member with reason</p>
+                </div>
+                <div class="command-card" data-category="security">
+                    <div class="command-header">
+                        <span class="command-name">/antinuke</span>
+                        <span class="command-category">Security</span>
+                    </div>
+                    <p class="command-desc">Configure anti-nuke protection</p>
+                </div>
+                <div class="command-card" data-category="security">
+                    <div class="command-header">
+                        <span class="command-name">/antiraid</span>
+                        <span class="command-category">Security</span>
+                    </div>
+                    <p class="command-desc">Setup anti-raid protection</p>
+                </div>
+                <div class="command-card" data-category="security">
+                    <div class="command-header">
+                        <span class="command-name">/whitelist</span>
+                        <span class="command-category">Security</span>
+                    </div>
+                    <p class="command-desc">Manage trusted users whitelist</p>
+                </div>
+                <div class="command-card" data-category="roles">
+                    <div class="command-header">
+                        <span class="command-name">/buttonrole</span>
+                        <span class="command-category">Roles</span>
+                    </div>
+                    <p class="command-desc">Create button role messages</p>
+                </div>
+                <div class="command-card" data-category="roles">
+                    <div class="command-header">
+                        <span class="command-name">/autorole</span>
+                        <span class="command-category">Roles</span>
+                    </div>
+                    <p class="command-desc">Setup automatic role assignment</p>
+                </div>
+                <div class="command-card" data-category="roles">
+                    <div class="command-header">
+                        <span class="command-name">/vanityroles</span>
+                        <span class="command-category">Roles</span>
+                    </div>
+                    <p class="command-desc">Vanity URL based role system</p>
+                </div>
+                <div class="command-card" data-category="music">
+                    <div class="command-header">
+                        <span class="command-name">/play</span>
+                        <span class="command-category">Music</span>
+                    </div>
+                    <p class="command-desc">Play a song from URL or search</p>
+                </div>
+                <div class="command-card" data-category="music">
+                    <div class="command-header">
+                        <span class="command-name">/queue</span>
+                        <span class="command-category">Music</span>
+                    </div>
+                    <p class="command-desc">View the music queue</p>
+                </div>
+                <div class="command-card" data-category="utility">
+                    <div class="command-header">
+                        <span class="command-name">/userinfo</span>
+                        <span class="command-category">Utility</span>
+                    </div>
+                    <p class="command-desc">Get information about a user</p>
+                </div>
+                <div class="command-card" data-category="utility">
+                    <div class="command-header">
+                        <span class="command-name">/serverinfo</span>
+                        <span class="command-category">Utility</span>
+                    </div>
+                    <p class="command-desc">Get server information</p>
+                </div>
+                <div class="command-card" data-category="utility">
+                    <div class="command-header">
+                        <span class="command-name">/avatar</span>
+                        <span class="command-category">Utility</span>
+                    </div>
+                    <p class="command-desc">Get user's avatar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stats-card">
+                    <div class="stats-icon"><i class="fas fa-server"></i></div>
+                    <div class="stats-info">
+                        <div class="stats-number">500+</div>
+                        <div class="stats-label">Servers</div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon"><i class="fas fa-users"></i></div>
+                    <div class="stats-info">
+                        <div class="stats-number">50K+</div>
+                        <div class="stats-label">Users</div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon"><i class="fas fa-terminal"></i></div>
+                    <div class="stats-info">
+                        <div class="stats-number">200+</div>
+                        <div class="stats-label">Commands</div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stats-info">
+                        <div class="stats-number">99.9%</div>
+                        <div class="stats-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Level Up Your Server?</h2>
+                <p>Join thousands of servers already using Zani to build amazing communities.</p>
+                <div class="cta-buttons">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1444034840474288282&permissions=8&integration_type=0&scope=bot" class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fab fa-discord"></i> Add Zani Now
+                    </a>
+                    <a href="https://discord.gg/zani" class="btn btn-secondary btn-lg" target="_blank">
+                        <i class="fas fa-headset"></i> Join Support Server
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Zani">
+                        <span>Zani</span>
+                    </div>
+                    <p>The most advanced Discord bot for your server. Moderation, security, roles, music, and more!</p>
+                    <div class="footer-social">
+                        <a href="https://discord.gg/zani" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#commands">Commands</a>
+                    <a href="#stats">Statistics</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="https://discord.gg/zani" target="_blank">Support Server</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Status</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="pages/terms.html">Terms of Service</a>
+                    <a href="pages/privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zani Bot. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color: #FFD700;"></i> for Discord Communities</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
