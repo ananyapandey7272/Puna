@@ -1,0 +1,1 @@
+console.log('Zani Bot is running!');
